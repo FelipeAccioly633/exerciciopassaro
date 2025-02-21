@@ -83,6 +83,26 @@ function update() {
         passarinho.x -= 5;
        
     }    
+     }  
+    
+    if (passarinho.y === 20){
+        passarinho.setFlip(false,false);
+        passarinho.baixo = true;
+    }
+
+    if (passarinho.y < 580 && passarinho.baixo === true){
+        passarinho.y += 5
+
+    }
+
+    if (passarinho.y === 580) {
+        passarinho.baixo = false;
+    }
+
+    if (passarinho.y > 20 && passarinho.baixo === false) {
+        passarinho.y -= 5;
+    }  
+    
 
 
     
